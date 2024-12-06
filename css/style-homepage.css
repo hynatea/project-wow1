@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*body*/
+
+body {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+/*titles*/
+
+h1,
+.h1 {
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin: auto;
+}
+
+/*header*/
+
+.site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*about us*/
+
+.about-us p {
+    display: flex;
+}
+
+.about-us {
+    margin: auto;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
