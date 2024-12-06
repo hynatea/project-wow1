@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 60.5%;
 }
 
 /*body*/
@@ -12,14 +12,20 @@ body {
     font-size: 1.6rem;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*titles*/
 
 h1,
 .h1 {
-    font-size: 3.1rem;
+    text-transform: uppercase;
     font-weight: 700;
+    margin: auto;
+}
+
+h3,
+.h3 {
     margin: auto;
 }
 
@@ -42,13 +48,172 @@ h1,
 
 /*about us*/
 
-.about-us p {
-    display: flex;
+.about-us {
+    display: block;
+    text-align: center;
 }
 
-.about-us {
-    margin: auto;
-    display: flex ;
+.about-us h1 {
+    padding: 1rem;
+}
+
+/*login*/
+
+.login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h2 {
+    text-transform: uppercase;
+}
+
+/* From Uiverse.io by TreepDeep */ 
+.button.x {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(86, 98, 246, 0.25);
+    gap: 0.75rem;
+    color: #ffffff;
+    background-color: #5662f6;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+  }
+  
+  .button.x svg {
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .button.x:hover {
+    transform: scale(1.02);
+    background-color: rgb(119, 133, 204);
+    box-shadow: 0 2px 4px rgba(119, 133, 204, 0.1);
+  }
+  
+  .button.x:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button.x:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 480px) {
+    .button.x {
+      max-width: 100%;
+    }
+  }
+  
+  /*services*/
+
+  .services .section-header {
+    text-align: center;
+  }
+ 
+  .section-header h2 {
+    text-transform: uppercase;
+  }
+
+  .service-icon {
+    width: 10%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .service-content {
+    margin: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  /*join us*/
+
+  .join-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .join-us p {
+    text-align: center;
+  }
+
+  /* From Uiverse.io by TreepDeep */ 
+    .button.y {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(86, 98, 246, 0.25);
+    gap: 0.75rem;
+    color: #ffffff;
+    background-color: #5662f6;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    text-decoration: none;
+  }
+  
+  .button.y svg {
+    height: 24px;
+    width: 24px;
+    fill: #fff;
+    margin-right: 0.5rem;
+  }
+  
+  .button.y:hover {
+    transform: scale(1.02);
+    background-color: rgb(119, 133, 204);
+    box-shadow: 0 2px 4px rgba(119, 133, 204, 0.1);
+  }
+  
+  .button.y:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button.y:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 480px) {
+    .button.y {
+      max-width: 100%;
+    }
+  }
+  
+/*footer*/
+
+footer .grid {
+    padding-top: 2rem;
+    font-size: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
