@@ -21,7 +21,7 @@ body {
 /*background*/
 
 body {
-background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: #000;
 }
 
 
@@ -127,7 +127,6 @@ color: #fff;
 h1,
 .h1 {
   font-weight: 700;
-  margin: auto;
 }
 
 .services h3,
@@ -155,7 +154,7 @@ header {
   position: fixed;
   z-index: 100;
   background: black;
-  border-bottom: solid #14f5f5;
+  border-bottom: 1px solid #14f5f5;
   
 }
 
@@ -236,26 +235,90 @@ header {
 
 /*sections*/
 
-/*about us*/
 
-.about-us .section-title {
-padding-top: 10rem;
+/*img wow*/
+
+.content-img {
+  width: 100%;
+  height: 250px;
+  position: relative;
 }
 
-.about-us h1 {
-display: flex;
-justify-content: center;
+.img-wow {
+width: 100%;
+height: 250px;
+object-fit: cover;
+}
+
+.img-illustration {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  .content-img {
+    height: 400px;
+  }
+  
+  .img-wow {
+    height: 400px;
+  }
+
+  .img-illustration {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img-illustration {
+    width: 100%;
+    height: 600px;
+  }
+  .right-img {
+    display: flex;
+    align-items: center;
+  }
+  .about-us .content {
+    width: 40%;
+  }
+
+  .container-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+/*about us*/
+
+@media (max-width: 780px) {
+  .about-us .content {
+    margin: 0 2rem;
+  }
+    }
+
+.about-us .section-title {
+font-size: 25px;
+position: absolute;
+left: 50%;
+top: 15%;
+transform: translate(-50%, -50%);
+background: #00000096;
 text-align: center;
-padding-bottom: 1rem;
-padding-top: 2rem;
+
 }
 
 .about-us .about-title {
-  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 1rem;
+  text-transform: none;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .about-us p {
-margin-left: 2rem;
 display: flex;
 justify-content: space-around;
 }
@@ -264,20 +327,8 @@ justify-content: space-around;
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 790px) {
-  .about-us .section-title
-  {
-    padding-top: 15rem;
-    font-size: 25px;
-  }
-  .about-us .about-title {
-    font-size: 25px;
-  }
-  .about-us .about-title, .about-us p, .about-us .content {
-    margin-left: 2rem;
-    display: block;
-    text-align: start;
-  }
+.about-us .content {
+  margin: 0 2rem;
 }
 
   .button.discord {
@@ -324,46 +375,43 @@ justify-content: space-around;
     opacity: 0.8;
 }
 
-@media (max-width: 480px) {
-    .discord-access {
-      padding-top: 2rem;
+    .button-access {
+      padding: 4rem 0;
       max-width: 100%;
       display: flex;
       justify-content: center;
-      margin-left: 2rem;
     }
-}
 
-
-/*img wow*/
-
-.img-wow {
-padding-top: 1rem;
-width: 100%;
-box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (min-width: 790px) {
-  .img-wow {
-    width: 45%;
-    padding-right: 3rem;
-    box-shadow: none;
+@media screen and (min-width: 800px) {
+  .about-us .section-title {
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background: #00000096;
+    text-align: center;
+    }
+  .about-us .about-title {
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
   }
   .about-us p {
-    font-size: 14px;
-    margin-right: 5rem;
-  }
-  .about-us .about-title {
-    text-align: center;
+    font-size: 18px;
   }
   .about-us .content {
-    padding-top: 5rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+    padding-bottom: 6rem;
+    margin-left: 5rem;
   }
-  .about-us .content-img {
-    display: flex;
+}
+
+@media screen and (min-width: 800px) {
+  .about-title h1 {
+    font-size: 50px;
   }
 }
 
@@ -379,93 +427,31 @@ box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.5);
 
 /*services*/
 
-.services {
-  padding-top: 8rem;
-}
-
-.services h1 {
-  padding-bottom: 1rem;
-  color: #fff;
-}
-
-.services {
-  text-align: center;
-}
-
-.service-icon {
-  width: 8%;
-  margin: 0 auto;
-}
-
-.service-content {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.service-content h3 {
-  color:#14f5f5
-}
-
-.service-content p {
-  padding: 0 8rem;
-}
-
-@media screen and (min-width: 790px) {
-  .services h1 {
-    padding-top: 10rem;
-    text-transform: uppercase;
-    font-size: 25px;
-  }
-  .service-icon {
-    margin: auto;
-    width: 75px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .services {
-    text-align: center; /* Centre le texte */
-    padding: 2rem 0; /* Ajoute un peu d'espace autour de la section */
-}
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-  .grid-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .service {
-    margin: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 20%;
-    min-width: 250px;
-}
-}
-
 /*join us*/
 
+.join-us h1 {
+  font-size: 25px;
+  padding-bottom: 2rem;
+}
+
 .join-us {
-  padding-top: 6rem;
+  padding-top: 2  rem;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
   padding-bottom: 5rem;
 }
 
 .join-us p {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 20px 2rem;
   text-align: center;
+}
+
+.join-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 /* From Uiverse.io by TreepDeep */ 
@@ -513,22 +499,50 @@ box-shadow: 0px 20px 20px 3px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
 
-@media (max-width: 780px) {
-  .button.y {
-    max-width: 100%;
+@media screen and (min-width: 800px) {
+
+  .join-us {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    justify-content: center
+  }
+  .join-us h1 {
+    font-size: 50px;
+    text-transform: none;
+  }
+  .join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
-@media screen and (min-width: 790px) {
-  .join-item {
-    font-size: 25px;
-    text-transform: uppercase;
+@media screen and (min-width: 1250px) {
+  .join-us {
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
+  }
+  .join-item h1 {
+    margin: none;
+    font-size: 100px;
+    text-transform: none;
+  }
+  .join-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   .join-us p {
-padding-bottom: 2rem;
-  }
-  .join-us {
-    padding-bottom: 10rem;
+    font-size: 18px;
+    margin: 0 5rem 5rem;
   }
 }
 
@@ -546,7 +560,6 @@ footer .grid {
   footer .grid {
     font-size: 14px;
     justify-content: space-between;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 10px
   }
  }
