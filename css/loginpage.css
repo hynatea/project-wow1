@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background: #000;
 }
 
 @media screen and (max-width: 780px) {
@@ -93,6 +93,7 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     margin: 20px;
     overflow: hidden;
+    border: solid aqua
 }
 
 .form-box {
