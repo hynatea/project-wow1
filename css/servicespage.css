@@ -46,7 +46,7 @@ header {
         position: fixed;
         z-index: 100;
         background: black;
-        border-bottom: 1px solid #14f5f5;
+        border-bottom: 2px solid #14f5f5;
         
       }
       
