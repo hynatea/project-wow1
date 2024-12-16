@@ -5,4 +5,4 @@
 node_modules/
 
 # Ignore all .env files
-.vscode
+.vscode/
